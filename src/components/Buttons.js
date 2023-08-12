@@ -8,7 +8,7 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
   // const displaySats = props.displaySats;
 
   return (
-    <div className={'flexContainer'}>
+    <div className={'flex-container'}>
       {/* <button>Placeholder Button</button> */}
       	
       {displaySats.map((sat, id) => {
