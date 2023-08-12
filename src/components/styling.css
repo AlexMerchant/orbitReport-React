@@ -17,7 +17,7 @@ button {
   font-weight: bold;
 }
 
-.flex-container {
+.flexContainer {
   display: flex;
   justify-content: center;
 }

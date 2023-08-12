@@ -1,4 +1,5 @@
 import satData from "./satData";
+import "./styling.css";
 
 const Buttons = ({ filterByType, setSat, displaySats }) => {
   // Chose to use destructuring instead of reading properties from function parameters
@@ -7,7 +8,7 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
   // const displaySats = props.displaySats;
 
   return (
-    <div>
+    <div className={'flexContainer'}>
       {/* <button>Placeholder Button</button> */}
       	
       {displaySats.map((sat, id) => {
@@ -18,9 +19,9 @@ const Buttons = ({ filterByType, setSat, displaySats }) => {
         );
       })}
 
-      <button onClick={setSat(satData)}>All Orbits</button>
+      <button onClick={() => setSat(satData)}>All Orbits</button>
     </div>
-  );
+  )
 };
 
 export default Buttons;
